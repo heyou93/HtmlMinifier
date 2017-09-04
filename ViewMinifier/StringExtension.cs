@@ -12,11 +12,20 @@
         {
             var file = value.ToLower();
 
+            //Ignore Special filename Case.
+            if (file.EndsWith(".html"))
+            {
+                if (file.ToLower().Contains("tv-chart"))
+                {
+                    return false;
+                }
+            }
+
             return  file.EndsWith(".cshtml") ||
                     file.EndsWith(".vbhtml") ||
                     file.EndsWith(".aspx") ||
-                    //file.EndsWith(".html") ||
-                    //file.EndsWith(".htm") ||
+                    file.EndsWith(".html") ||
+                    file.EndsWith(".htm") ||
                     file.EndsWith(".ascx") ||
                     file.EndsWith(".master") ||
                     file.EndsWith(".inc");
