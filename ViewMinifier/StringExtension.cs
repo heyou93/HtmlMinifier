@@ -28,6 +28,7 @@
                     file.EndsWith(".htm") ||
                     file.EndsWith(".ascx") ||
                     file.EndsWith(".master") ||
+                    file.EndsWith(".php") ||
                     file.EndsWith(".inc");
         }
     }
