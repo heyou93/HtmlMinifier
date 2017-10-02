@@ -37,7 +37,7 @@
             }
           },
           "osProfile": {
-            "computerNamePrefix": "InvestaDevWebApiVMScaleSet",
+            "computerNamePrefix": "DevApiVM",
             "adminUsername": "[parameters('adminUsername')]",
             "adminPassword": "[parameters('adminPassword')]"
           },
